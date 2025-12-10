@@ -2,9 +2,9 @@ package com.example.bugslife;
 
 import java.util.ArrayList;
 
-public class Order {
+public  class Order {
 public static final double tax = 0.02;
-private ArrayList<OrderItem> item = new ArrayList<>();
+public ArrayList<OrderItem> item = new ArrayList<>();
 
 public void addItem(String name, double price, double extra){
     item.add(new OrderItem(name,price,extra));
@@ -26,7 +26,7 @@ public double getTotal(){
     return subTotal() + getTax();
 }
 
-class OrderItem{
+public static class OrderItem{
     private String name;
     private double basePrice;
     private double extra;

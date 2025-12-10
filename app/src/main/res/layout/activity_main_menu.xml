@@ -9,6 +9,16 @@
     android:background="@color/Beige"
     >
 
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:backgroundTint="@color/material_dynamic_tertiary60"
+
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="667dp" />
+
     <TextView
         android:id="@+id/Menu"
         android:layout_width="wrap_content"
@@ -101,10 +111,10 @@
         android:id="@+id/stars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="136dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/material_dynamic_tertiary60"
         android:text="Give 5 Stars!"
         app:layout_constraintBottom_toBottomOf="@id/main"
-        app:layout_constraintEnd_toEndOf="@id/main"
-        android:backgroundTint="@color/material_dynamic_tertiary60"
-        />
+        app:layout_constraintEnd_toEndOf="@id/main" />
 </androidx.constraintlayout.widget.ConstraintLayout>

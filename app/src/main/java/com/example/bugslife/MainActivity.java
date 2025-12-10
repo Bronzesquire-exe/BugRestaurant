@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button menu = findViewById(R.id.menu);
+        Button address = findViewById(R.id.address);
 
 menu.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -29,6 +30,7 @@ menu.setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
+
 
     }
 

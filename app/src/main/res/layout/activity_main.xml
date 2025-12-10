@@ -9,6 +9,15 @@
     android:background="@color/Beige"
     >
 
+    <Button
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:backgroundTint="@color/material_dynamic_tertiary60"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="325dp" />
+
     <TextView
         android:id="@+id/Title"
         android:layout_width="wrap_content"
