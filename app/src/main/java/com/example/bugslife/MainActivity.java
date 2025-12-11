@@ -2,6 +2,7 @@ package com.example.bugslife;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -23,16 +24,27 @@ public class MainActivity extends AppCompatActivity {
         Button menu = findViewById(R.id.menu);
         Button address = findViewById(R.id.address);
 
-menu.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-         Intent intent = new Intent(MainActivity.this, MainMenu.class);
-        startActivity(intent);
-    }
-});
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainMenu.class);
+                startActivity(intent);
+            }
+        });
+        address.setOnClickListener(v ->{
+            Uri location = Uri.parse("geo:0,0?q=Baltimore+Polytechnic+Institute+Baltimore+MD");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+            mapIntent.setPackage("com.google.android.apps.maps");
+
+            startActivity(mapIntent);
+
+        });
+        
 
 
+
     }
+
 
 
 
