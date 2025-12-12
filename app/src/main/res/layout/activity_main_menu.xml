@@ -113,7 +113,7 @@
         android:id="@+id/stars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="292dp"
+        android:layout_marginEnd="276dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/material_dynamic_tertiary60"
         android:text="Give 5 Stars!"

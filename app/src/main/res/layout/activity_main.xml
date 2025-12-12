@@ -15,8 +15,12 @@
         android:layout_height="wrap_content"
         android:text="Address"
         android:backgroundTint="@color/material_dynamic_tertiary60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="325dp" />
+        tools:layout_editor_absoluteY="325dp"
+
+        />
 
     <TextView
         android:id="@+id/Title"
