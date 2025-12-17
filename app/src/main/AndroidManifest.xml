@@ -11,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BugsLife">
+
+        <!-- ADD THIS LINE -->
+        <activity
+            android:name=".Checkout"
+            android:exported="false" />
+
         <activity
             android:name=".ContactInformation"
             android:exported="false" />
